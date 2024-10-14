@@ -46,7 +46,7 @@ func main() {
 
 	createTable(db)
 
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+	http.HandleFunc("/cotacao", func(w http.ResponseWriter, r *http.Request) {
 		handler(w, r, db)
 	})
 
